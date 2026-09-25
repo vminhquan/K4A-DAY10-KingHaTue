@@ -1,0 +1,48 @@
+{
+  "report_name": "corrupted",
+  "success": false,
+  "gx_success": false,
+  "gx_version": "1.23.1",
+  "checks": [
+    {
+      "name": "row_count_between_5_and_5000",
+      "success": true,
+      "unexpected_count": 0
+    },
+    {
+      "name": "paper_id_not_null",
+      "success": true,
+      "unexpected_count": 0
+    },
+    {
+      "name": "title_not_null",
+      "success": true,
+      "unexpected_count": 0
+    },
+    {
+      "name": "text_for_embedding_not_null",
+      "success": true,
+      "unexpected_count": 0
+    },
+    {
+      "name": "paper_id_unique",
+      "success": false,
+      "unexpected_count": 8
+    },
+    {
+      "name": "summary_length_at_least_30",
+      "success": false,
+      "unexpected_count": 5
+    }
+  ],
+  "freshness": {
+    "freshness_threshold_days": 180,
+    "latest_published": "2026-06-12",
+    "oldest_published": "2000-01-01",
+    "stale_rows": 6,
+    "total_rows": 23,
+    "stale_ratio": 0.2608695652173913,
+    "max_stale_ratio": 0.25,
+    "is_fresh": false
+  }
+}

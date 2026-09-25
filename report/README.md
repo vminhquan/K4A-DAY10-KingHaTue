@@ -1,15 +1,15 @@
-# Hướng dẫn làm bài và nộp báo cáo
+# Hướng dẫn báo cáo & tái lập bài làm cá nhân
 
-Thư mục `report/` cung cấp mẫu báo cáo cho **bài tập bắt buộc làm nhóm**. Mỗi nhóm có từ **3 đến 5 thành viên**, có phân công rõ ràng nhưng tất cả thành viên vẫn phải hiểu luồng end-to-end.
+Thư mục `report/` ghi nhận bài làm cá nhân của **Võ Minh Quân — 2A202602429** cho repository [`K4-L3-DAY10-KingHaTue`](https://github.com/vminhquan/K4-L3-DAY10-KingHaTue). Một người thực hiện toàn bộ luồng end-to-end.
 
 ## 1. Quy định về báo cáo
 
-Mỗi nhóm nộp:
+Hồ sơ báo cáo gồm:
 
-1. Một [`group_report.md`](group_report.md) đại diện cho kết quả chung của nhóm.
-2. Mỗi thành viên hoàn thành thêm một bản [`individual_report.md`](individual_report.md) để mô tả vai trò, phần việc, kết quả và mức hiểu của mình trong nhóm.
+1. [`group_report.md`](group_report.md): báo cáo tổng hợp kỹ thuật của bài làm.
+2. [`individual_report.md`](individual_report.md) và [`2A202602429_VoMinhQuan.md`](2A202602429_VoMinhQuan.md): báo cáo phạm vi công việc cá nhân.
 
-Khi cần lưu nhiều báo cáo thành viên trong cùng repository, nhóm nên tạo bản sao theo quy ước:
+Quy ước file báo cáo cá nhân là:
 
 ```text
 <MSSV>_HoTen.md
@@ -47,25 +47,15 @@ Các trạng thái baseline, corrupted và repaired phải được đánh giá 
 
 ### Giữ một môi trường thống nhất
 
-Tất cả thành viên trong nhóm cần thống nhất:
-
-- cấu trúc thư mục và đường dẫn artifact có sẵn trong project;
-- không thay đổi chữ ký hàm mà các module khác đang gọi.
+Người thực hiện giữ thống nhất cấu trúc thư mục, đường dẫn artifact và chữ ký hàm giữa các module.
 
 ### Chia theo deliverable, không chia máy móc theo package
 
-Mỗi phần việc phải có:
+Mỗi deliverable vẫn phải nêu rõ input, output và cách xác minh. Ingestion, cleaning, evaluation, observability và pipeline phụ thuộc trực tiếp vào cùng schema/artifact contract.
 
-- owner chính;
-- input cần nhận;
-- output phải bàn giao;
-- cách xác minh.
+### Người thực hiện phải hiểu luồng end-to-end
 
-Không nên chia theo kiểu mỗi người viết một file độc lập rồi ghép lại vào cuối. Các phần ingestion, cleaning, evaluation, observability và pipeline phụ thuộc trực tiếp vào schema và artifact của nhau.
-
-### Mọi thành viên phải hiểu luồng end-to-end
-
-Owner chịu trách nhiệm chính cho module được giao, nhưng không đồng nghĩa chỉ owner mới cần hiểu module đó. Mỗi thành viên phải giải thích được:
+Người thực hiện phải giải thích được:
 
 - dữ liệu đi qua pipeline như thế nào;
 - module của mình nhận input gì và tạo output gì;
@@ -73,9 +63,9 @@ Owner chịu trách nhiệm chính cho module được giao, nhưng không đồ
 - artifact hoặc metric nào chứng minh kết luận;
 - pipeline được repair và xác minh lại như thế nào.
 
-## 4. Phần việc và báo cáo vai trò của thành viên
+## 4. Phạm vi công việc cá nhân
 
-Nhóm phân công các khối dưới đây cho từng thành viên. Mỗi khối có một owner chính; owner có thể nhận nhiều khối khi nhóm ít người, nhưng phải nêu rõ phạm vi trong `individual_report.md`.
+Võ Minh Quân sở hữu tất cả khối dưới đây; chi tiết và evidence nằm ở `individual_report.md`.
 
 | Khối                      | File trọng tâm                                                      | Output cần kiểm tra                                            |
 | -------------------------- | --------------------------------------------------------------------- | ---------------------------------------------------------------- |
@@ -103,7 +93,9 @@ Trong `individual_report.md`, mỗi thành viên cần phân biệt rõ:
 - phần chưa chạy được và blocker còn lại;
 - bằng chứng thực tế tương ứng với từng kết luận.
 
-## 5. Hướng dẫn làm bài nhóm
+## 5. Gợi ý phân vai nhóm (không áp dụng cho bài làm này)
+
+Các bảng dưới đây là tài liệu tham khảo từ starter. Bài làm hiện tại là cá nhân nên không dùng phân vai nhóm.
 
 ### Nhóm 3 thành viên
 
@@ -138,9 +130,9 @@ Với nhóm 3, khối tích hợp tương đối lớn. Thành viên 1 hỗ tr�
 
 Thành viên 5 không chỉ làm tài liệu. Vai trò này chịu trách nhiệm kỹ thuật cho orchestration, reproducibility và kiểm tra sự nhất quán giữa report với artifact.
 
-## 6. Phối hợp và tích hợp
+## 6. Contract tích hợp nội bộ
 
-Trước khi làm song song, nhóm cần thống nhất contract dùng chung:
+Các module dùng chung contract sau:
 
 | Contract          | Nội dung cần thống nhất                                                   |
 | ----------------- | ----------------------------------------------------------------------------- |
@@ -152,7 +144,7 @@ Trước khi làm song song, nhóm cần thống nhất contract dùng chung:
 | Metrics           | Dùng cùng tên metric và cùng evaluation set                              |
 | Repair            | Repair lại từ nguồn raw/baseline nào và cách xác minh                  |
 
-Trước khi tích hợp phần việc, nhóm cần kiểm tra:
+Trước khi tích hợp phần việc, cần kiểm tra:
 
 - input/output có đúng contract chung không;
 - có hard-code path, model hoặc secret không;
@@ -166,13 +158,13 @@ Trước khi tích hợp phần việc, nhóm cần kiểm tra:
 Với `uv`:
 
 ```bash
-uv run python script/run_phase1.py
+ALLOW_EMBEDDING_DOWNLOAD=1 python script/run_phase1.py
 ```
 
 Với môi trường `pip` đã được kích hoạt:
 
 ```bash
-python script/run_phase1.py
+ALLOW_EMBEDDING_DOWNLOAD=1 python script/run_phase1.py
 ```
 
 ### Chạy corruption flow
@@ -180,13 +172,13 @@ python script/run_phase1.py
 Với `uv`:
 
 ```bash
-uv run python script/run_corruption_flow.py
+ALLOW_EMBEDDING_DOWNLOAD=1 python script/run_corruption_flow.py
 ```
 
 Với môi trường `pip` đã được kích hoạt:
 
 ```bash
-python script/run_corruption_flow.py
+ALLOW_EMBEDDING_DOWNLOAD=1 python script/run_corruption_flow.py
 ```
 
 Repo hiện không cung cấp test hoặc grader tự động làm tiêu chí pass cuối cùng. Việc xác minh dựa trên lệnh pipeline, artifacts thực tế, metrics, báo cáo và [`RUBRIC.md`](../docs/RUBRIC.md).
@@ -207,18 +199,17 @@ Không đánh dấu hoàn thành nếu report mô tả kết quả không khớp
 
 ## 8. Definition of Done
 
-- [ ] Có danh sách thành viên, vai trò, phạm vi và output của từng người.
-- [ ] Mỗi deliverable có owner và output rõ ràng.
-- [ ] Một thành viên có thể chạy lại toàn bộ pipeline từ hướng dẫn chung.
-- [ ] `group_report.md` khớp với code, artifacts và metrics.
-- [ ] Mỗi thành viên có một `individual_report.md` riêng về vai trò và phần việc của mình.
-- [ ] Tất cả thành viên có thể giải thích luồng end-to-end và phần mình phụ trách.
-- [ ] Không có `.env`, API key hoặc secret trong repository, report hoặc log.
+- [x] Có một người thực hiện, phạm vi và output rõ ràng.
+- [x] Mỗi deliverable có owner và output rõ ràng.
+- [x] Có thể chạy lại toàn bộ pipeline từ hướng dẫn chung.
+- [x] `group_report.md` khớp với code, artifacts và metrics.
+- [x] Có báo cáo cá nhân `2A202602429_VoMinhQuan.md`.
+- [x] Người thực hiện có thể giải thích toàn bộ luồng end-to-end.
+- [x] Không có API key hoặc secret trong report/log; không commit `.env`.
 
-## 9. Nguyên tắc báo cáo trung thực
+## 9. Nguyên tắc báo cáo trung thực cá nhân
 
 - Không ghi “đã chạy thành công” nếu chưa có output mới để kiểm chứng.
-- Không sao chép cùng một nội dung báo cáo thành viên cho mọi người.
-- Không nhận ownership cho file hoặc hàm mà mình không trực tiếp thực hiện.
+- Không nhận ownership cho file hoặc hàm không trực tiếp thực hiện.
 - Nếu một phần chưa hoàn thành, ghi rõ trạng thái, lỗi nguyên văn đã che secret, nguyên nhân đã xác định và bước tiếp theo.
-- Số liệu của các nhóm có thể khác nhau vì Crossref là nguồn sống. Chỉ so sánh các trạng thái trong cùng bài làm, trên cùng test set và cấu hình.
+- Chỉ so sánh các trạng thái trong cùng bài làm, trên cùng test set và cấu hình.

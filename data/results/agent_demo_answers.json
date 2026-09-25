@@ -1,0 +1,22 @@
+[
+  {
+    "question": "What is the summary of the paper 'Continuous Benchmark Evaluation for Enterprise Retrieval Pipelines'?",
+    "answer": "Static benchmarks fail to capture domain drift in enterprise knowledge bases.",
+    "retrieved_doc_ids": [
+      "10.1145/3637528.3671812",
+      "10.1145/3637528.3671824",
+      "10.1145/3637528.3671817",
+      "10.1145/3637528.3671805"
+    ]
+  },
+  {
+    "question": "Who authored the paper 'Synthetic Corruption Testing: Stress-Testing Vector Search Robustness'?",
+    "answer": "Kien Duong, Vy Ly",
+    "retrieved_doc_ids": [
+      "10.1145/3637528.3671807",
+      "10.1145/3637528.3671819",
+      "10.1145/3637528.3671814",
+      "10.1145/3637528.3671802"
+    ]
+  }
+]

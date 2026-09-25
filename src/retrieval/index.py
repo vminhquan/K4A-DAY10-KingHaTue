@@ -33,7 +33,6 @@ class LocalEmbeddingIndex:
         self.collection_name = collection_name
         self.documents = documents
         self.persist_path = persist_path
-        self.embedding_backend = "chroma"
         self.embedding_model = MiniLMEmbeddings(settings.embedding_model)
         self.client = chromadb.PersistentClient(path=str(persist_path))
         self.collection = self.client.get_collection(name=collection_name)
@@ -116,6 +115,7 @@ class LocalEmbeddingIndex:
             {
                 "backend": "chroma",
                 "embedding_model": settings.embedding_model,
+                "embedding_backend": embedding_model.backend,
                 "persist_path": str(persist_path),
                 "collection_name": collection_name,
                 "documents": documents,
