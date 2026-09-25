@@ -6,7 +6,7 @@
 | MSSV | 2A202602429 |
 | Lớp | K4-L3-DAY10 |
 | Vai trò | End-to-end Data Pipeline owner |
-| Repository | `https://github.com/vminhquan/K4-L3-DAY10-KingHaTue` |
+| Repository | `https://github.com/vminhquan/K4A-DAY10-KingHaTue` |
 | Ngày hoàn thành kỹ thuật | 2026-09-25 |
 
 ## Phạm vi công việc

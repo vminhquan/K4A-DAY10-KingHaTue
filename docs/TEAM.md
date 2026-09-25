@@ -2,7 +2,7 @@
 
 - **Tên Nhóm / Bài làm:** `KingHaTue` — cá nhân
 - **Mã Nhóm / Lớp:** `K4-L3-DAY10`
-- **Tên Repository Nộp Bài:** `https://github.com/vminhquan/K4-L3-DAY10-KingHaTue`
+- **Tên Repository Nộp Bài:** `https://github.com/vminhquan/K4A-DAY10-KingHaTue`
 
 ---
 

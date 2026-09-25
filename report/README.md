@@ -1,6 +1,6 @@
 # Hướng dẫn báo cáo & tái lập bài làm cá nhân
 
-Thư mục `report/` ghi nhận bài làm cá nhân của **Võ Minh Quân — 2A202602429** cho repository [`K4-L3-DAY10-KingHaTue`](https://github.com/vminhquan/K4-L3-DAY10-KingHaTue). Một người thực hiện toàn bộ luồng end-to-end.
+Thư mục `report/` ghi nhận bài làm cá nhân của **Võ Minh Quân — 2A202602429** cho repository [`K4A-DAY10-KingHaTue`](https://github.com/vminhquan/K4A-DAY10-KingHaTue). Một người thực hiện toàn bộ luồng end-to-end.
 
 ## 1. Quy định về báo cáo
 

@@ -8,7 +8,7 @@
 | ------------------ | -------------------------- |
 | Khóa/Lớp         | K4 — K4-L3-DAY10              |
 | Tên nhóm/bài làm | KingHaTue — cá nhân |
-| Repository | `https://github.com/vminhquan/K4-L3-DAY10-KingHaTue` |
+| Repository | `https://github.com/vminhquan/K4A-DAY10-KingHaTue` |
 | Ngày hoàn thành | 2026-09-25               |
 
 ### Thành viên và phân công
@@ -16,6 +16,8 @@
 | STT | Họ và tên | MSSV | Vai trò chính | Module/deliverable sở hữu |
 | --: | --- | --- | --- | --- |
 | 1 | Võ Minh Quân | 2A202602429 | End-to-end pipeline owner | Toàn bộ `src/`, `script/`, `data/` và report artifacts |
+
+*Vì không tìm được nhóm nên bài làm này tôi tự thực hiện toàn bộ phạm vi kỹ thuật, mong BTC tạo điều kiện cho bài lab của tôi. Cảm ơn BTC rất nhiều !*
 
 ## 2. Tóm tắt kết quả
 
