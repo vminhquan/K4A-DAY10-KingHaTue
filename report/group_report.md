@@ -284,7 +284,7 @@ Mô tả một vấn đề phát sinh khi ghép các module trong pipeline và c
 ## 13. Checklist trước khi nộp
 
 - [x] Thông tin cá nhân và repository đã được điền.
-- [ ] Commit thật khớp với phạm vi công việc cá nhân.
+- [x] Commit thật khớp với phạm vi công việc cá nhân.
 - [x] Lệnh tái hiện đã chạy trên phiên bản artifacts hiện tại.
 - [x] Ba trạng thái dùng chung evaluation set.
 - [x] Metrics/quality/freshness khớp artifacts.
