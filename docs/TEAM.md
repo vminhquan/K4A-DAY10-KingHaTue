@@ -10,7 +10,7 @@
 
 | STT | Họ và tên | MSSV | Email | Vai trò & Phân công công việc | Báo cáo cá nhân |
 |---:|---|---|---|---|---|
-| 1 | Võ Minh Quân | 2A202602429 | Không khai báo trong report | Thực hiện toàn bộ: ingestion, cleaning, MiniLM/Chroma, GX/evaluation, corruption/repair và integration | `report/2A202602429_VoMinhQuan.md` |
+| 1 | Võ Minh Quân | 2A202602429 | vmquan44@gmail.com | Thực hiện toàn bộ: ingestion, cleaning, MiniLM/Chroma, GX/evaluation, corruption/repair và integration | `report/2A202602429_VoMinhQuan.md` |
 
 *Vì không tìm được nhóm nên bài làm này tôi tự thực hiện toàn bộ phạm vi kỹ thuật, mong BTC tạo điều kiện và ghi nhận cho bài lab của tôi. Cảm ơn BTC rất nhiều !*
 
