@@ -219,8 +219,8 @@ OPENAI_API_KEY=
   - `data/reports/corruption_report.md` (bảng đối chiếu 3 trạng thái rõ ràng)
 - [x] **Data Observability (GX 1.x):** Quality Gate sử dụng cú pháp chuẩn GX 1.x (`gx.get_context()`, `add_pandas()`), phát hiện thành công khi data bị inject lỗi.
 - [x] **Bảo mật:** Không commit file `.env` hoặc API Key cá nhân lên GitHub.
-- [ ] **Kiểm tra Contributor trên GitHub:** 
+- [x] **Kiểm tra Contributor trên GitHub:** 
   > ⚠️ **QUY TẮC ĐIỂM DANH GITHUB:**  
   > GitHub chỉ ghi nhận đóng góp khi commit được push trực tiếp vào **nhánh mặc định (`main`)**.  
   > Trước khi nộp bài, mở trình duyệt vào repo nhóm, chọn tab **Insights > Contributors**. Bắt buộc mọi thành viên trong nhóm đều phải xuất hiện trên biểu đồ commit thì mới được tính điểm chuyên cần nhóm!
-- [ ] **Nộp bài lên VLearn LMS:** Mỗi thành viên copy đường link repository GitHub của nhóm và nộp lên cổng LMS trước khi đồng hồ đếm ngược kết thúc 240 phút!
+- [x] **Nộp bài lên VLearn LMS:** Mỗi thành viên copy đường link repository GitHub của nhóm và nộp lên cổng LMS trước khi đồng hồ đếm ngược kết thúc 240 phút!
