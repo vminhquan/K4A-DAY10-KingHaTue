@@ -17,7 +17,7 @@
 | --: | --- | --- | --- | --- |
 | 1 | Võ Minh Quân | 2A202602429 | End-to-end pipeline owner | Toàn bộ `src/`, `script/`, `data/` và report artifacts |
 
-*Vì không tìm được nhóm nên bài làm này tôi tự thực hiện toàn bộ phạm vi kỹ thuật, mong BTC tạo điều kiện cho bài lab của tôi. Cảm ơn BTC rất nhiều !*
+*Vì không tìm được nhóm nên bài làm này tôi tự thực hiện toàn bộ phạm vi kỹ thuật, mong BTC tạo điều kiện và ghi nhận cho bài lab của tôi. Cảm ơn BTC rất nhiều !*
 
 ## 2. Tóm tắt kết quả
 
